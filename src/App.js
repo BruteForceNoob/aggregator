@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './css/App.css';
+import HomeGrid from './components/HomeGrid';
+
+
+
+
+
+
+
+//const articleData=getArticles();
+
+
+
+/*const articleData = {
+  source: "TechCrunch",
+  sourceImage: "https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32",
+  title: "Reface, a viral face-swap app from Ukraine, adds anti-war push notifications",
+  articleImage: "https://techcrunch.com/wp-content/uploads/2022/02/ukraine-GettyImages-1238723942.jpg?w=730&amp;crop=1",
+  author: "Natasha Lomas",
+  sourceLink: "https://techcrunch.com/2022/02/27/reface-a-viral-face-swap-app-from-ukraine-adds-anti-war-push-notifications/"
+
+};*/
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="App">
+        <header className="App-header">
+          <p>
+            The aggregator app!
+          </p>
+
+        </header>
+        
+      </div>
+      <HomeGrid/>
+
     </div>
   );
 }
